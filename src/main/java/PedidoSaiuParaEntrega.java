@@ -12,7 +12,7 @@ public class PedidoSaiuParaEntrega extends PedidoEstado{
     }
 
     @Override
-    public boolean sairParaEntrega(Pedido pedido) {
+    public boolean entregue(Pedido pedido) {
         pedido.setEstado(PedidoSaiuParaEntrega.getInstance());
         return true;
     }
